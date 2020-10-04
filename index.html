@@ -4,117 +4,35 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./.github/icon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./.github/icon.jpg" type="image/x-icon" />
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <title>Webcomponents</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Roboto", sans-serif;
-        }
 
-        :root {
-            --background: #eee;
-            --color-button: #8c8c8c;
-            --black: #000;
-            --white: #fff;
-        }
-
-        body {
-            background: var(--background);
-        }
-
-        .container {
-            width: 1250px;
-            margin: 0 auto;
-        }
-
-        .title {
-            font-size: 60px;
-            font-weight: 900;
-        }
-
-        .subtitle {
-            font-size: 22px;
-            font-weight: 500;
-            opacity: 0.5;
-        }
-
-        .content {
-            margin: 80px 0px;
-        }
-
-        .content-button {
-            display: inline;
-        }
-
-        .button {
-            border-radius: 5px;
-            border: none;
-            padding: 60px 80px;
-            background: var(--color-button);
-            margin: 0px 10px 10px 0px;
-            font-size: 30px;
-            font-weight: 600;
-            color: var(--white);
-            text-decoration: none;
-            text-transform: uppercase;
-            display: inline-flex;
-        }
-
-        .button:hover {
-            border: 3px solid var(--color-button);
-            padding: 57px 77px;
-            background: var(--white);
-            color: var(--color-button);
-            /* transition: 0.5s; */
-        }
-    </style>
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
     <div class="container">
         <div class="content">
-            <h1 class="title">
-                Web Components
-            </h1>
+            <h1 class="title">Web Components</h1>
             <h2 class="subtitle">
                 Select a categorie to open more options
             </h2>
         </div>
+
         <div class="content content-button">
-            <a href="javascript:void(0)" class="button">
-                Buttons
-            </a>
-            <a href="javascript:void(0)" class="button">
-                Headers
-            </a>
-            <a href="javascript:void(0)" class="button">
-                Footers
-            </a>
-            <a href="javascript:void(0)" class="button">
-                Menus
-            </a>
-            <a href="javascript:void(0)" class="button">
-                Sliders
-            </a>
-            <a href="javascript:void(0)" class="button">
-                Banners
-            </a>
-            <a href="javascript:void(0)" class="button">
-                Forms
-            </a>
-            <a href="javascript:void(0)" class="button">
-                Cards
-            </a>
-            <a href="javascript:void(0)" class="button">
-                Image Grid
-            </a>
+            <a href="./components/buttons/index.html" class="button"> Buttons </a>
+            <a href="javascript:void(0)" class="button"> Headers </a>
+            <a href="javascript:void(0)" class="button"> Footers </a>
+            <a href="javascript:void(0)" class="button"> Menus </a>
+            <a href="javascript:void(0)" class="button"> Sliders </a>
+            <a href="javascript:void(0)" class="button"> Banners </a>
+            <a href="javascript:void(0)" class="button"> Forms </a>
+            <a href="javascript:void(0)" class="button"> Cards </a>
+            <a href="javascript:void(0)" class="button"> Image Grid </a>
         </div>
     </div>
     <!-- A GENTE TEM QUE ARRUMAR TIPO UM LAYOUT ONDE A GENTE VÁ LINKANDO PARA A
