@@ -32,7 +32,7 @@
 
 
         /* IT'S IMPORTANT, BUTTON'S STYLES */
-        .button-wthout-border {
+        .solid-button {
             border: none;
             padding: 15px 30px;
             cursor: pointer;
@@ -41,16 +41,16 @@
             text-transform: uppercase;
             text-decoration: none;
             font-weight: bolder;
-            opacity: 0.8;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
         }
 
-        .button-wthout-border:focus {
+        .solid-button:focus {
             outline: dotted;
             outline-color: dimgrey;
-        }
-
-        .button-wthout-border:hover {
-            opacity: 1;
         }
     </style>
 </head>
@@ -64,7 +64,7 @@
 
     <!-- BUTTON, IT'S IMPORTANT -->
     <div class="content-center">
-        <button class="button-wthout-border">Click on me</button>
+        <button class="solid-button">Click on me</button>
     </div>
 </body>
 </html>

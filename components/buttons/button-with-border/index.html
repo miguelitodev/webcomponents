@@ -32,24 +32,29 @@
 
 
         /* IT'S IMPORTANT, BUTTON'S STYLES */
-        .button-wthout-border {
-            border: none;
+        .button-with-border {
+            border: 2px solid darkgreen;
             padding: 15px 30px;
             cursor: pointer;
-            background-color: darkgreen;
-            color: #fff;
+            background-color: transparent;
+            color: darkgreen;
             text-transform: uppercase;
             text-decoration: none;
             font-weight: bolder;
             opacity: 0.8;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
         }
 
-        .button-wthout-border:focus {
+        .button-with-border:focus {
             outline: dotted;
             outline-color: dimgrey;
         }
 
-        .button-wthout-border:hover {
+        .button-with-border:hover {
             opacity: 1;
         }
     </style>
@@ -64,7 +69,7 @@
 
     <!-- BUTTON, IT'S IMPORTANT -->
     <div class="content-center">
-        <button class="button-wthout-border">Click on me</button>
+        <button class="button-with-border">Click on me</button>
     </div>
 </body>
 </html>

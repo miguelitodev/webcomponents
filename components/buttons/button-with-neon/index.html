@@ -32,7 +32,7 @@
 
 
         /* IT'S IMPORTANT, BUTTON'S STYLES */
-        .button-wthout-border {
+        .button-with-neon {
             border: none;
             padding: 15px 30px;
             cursor: pointer;
@@ -42,15 +42,22 @@
             text-decoration: none;
             font-weight: bolder;
             opacity: 0.8;
+            transition: box-shadow 0.5s;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
         }
 
-        .button-wthout-border:focus {
+        .button-with-neon:focus {
             outline: dotted;
             outline-color: dimgrey;
         }
 
-        .button-wthout-border:hover {
+        .button-with-neon:hover {
             opacity: 1;
+            box-shadow: 0px 0px 20px 0px rgba(62,207,69,1);
         }
     </style>
 </head>
@@ -64,7 +71,7 @@
 
     <!-- BUTTON, IT'S IMPORTANT -->
     <div class="content-center">
-        <button class="button-wthout-border">Click on me</button>
+        <button class="button-with-neon">Click on me</button>
     </div>
 </body>
 </html>
