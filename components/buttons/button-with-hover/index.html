@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcomponents</title>
+    <link rel="stylesheet" href="./../../../css/styles.css">
+
+    <style>
+        /* NOT IMPORTANT */
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .header {
+            padding: 30px;
+        }
+
+        .content-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+
+        /* IT'S IMPORTANT, BUTTON'S STYLES */
+        .button-with-hover {
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            background-color: rgb(43, 148, 43);
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bolder;
+            opacity: 0.8;
+        }
+
+        .button-with-hover:focus {
+            outline: dotted;
+            outline-color: dimgrey;
+        }
+
+        .button-with-hover:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- NOT IMPORTANT -->
+    <div class="header">
+        <a href="./../index.html" class="subtitle">
+            👈
+        </a>
+    </div>
+
+    <!-- BUTTON, IT'S IMPORTANT -->
+    <div class="content-center">
+        <button class="button-with-hover">Click on me</button>
+    </div>
+</body>
+</html>
